@@ -1,4 +1,4 @@
-import logo from '../assets/images/';
+import logo from '../assets/images/kasalogo.png';
 import '../styles/Header.scss';
 
 

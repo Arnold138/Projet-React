@@ -9,6 +9,8 @@ export default function Header () {
         <header> 
             <nav> 
                 <img src={logo} alt='Kasa logo' className='logo'/>
+                <Link to="/">Accueil</Link>
+                
                 
             </nav>
         </header>

@@ -1,6 +1,7 @@
 import {Routes,Route} from 'react-router-dom'
 import Home from './pages/home';
 import Error from './pages/error/index.jsx';
+import About from './pages/about/index.jsx';
 
 export default function Router() { 
 
@@ -8,6 +9,7 @@ export default function Router() {
         <Routes> 
             <Route path="/" element={<Home/>}/>
             <Route path='*' element={<Error/>}/>
+            <Route path='/about' element={<About/>} />
 
         </Routes>
     );

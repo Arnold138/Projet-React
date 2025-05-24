@@ -1,0 +1,33 @@
+.cards-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    gap:50px;
+    background: #F6F6F6;
+    padding: 45px;
+}
+.card { 
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background: #FF6060;
+}
+
+.card img {
+    display: none;
+    width:340px;
+    height: 340px;
+    background: #FF6060;
+
+}
+
+.card-title-overlay { 
+    position:absolute;
+    bottom: 30px;
+    left: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}

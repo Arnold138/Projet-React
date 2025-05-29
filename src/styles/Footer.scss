@@ -1,0 +1,24 @@
+footer { 
+    width: 1440px;
+}
+.Footerdisplay { 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: black;
+    height: 209px;
+}
+
+.Footerdisplay .logoblack {  
+    width:122px;
+}
+.Footerdisplay .logoblack {
+    margin: 56px auto 25px;
+
+
+} 
+.Footerdisplay h4 { 
+     margin: 0 auto;
+     color: white;
+     font-size: 24px;
+}

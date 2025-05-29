@@ -13,10 +13,9 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
     background-color: #F6F6F6;
     border-radius: 25px;
-    opacity: 40%
+    opacity: 40%;
 } 
-
-h2 { 
+.banner h2 {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -24,6 +23,12 @@ h2 {
     color: #ffffff;
     font-size: 48px;
     font-weight: 700;
-    font-family: sans-serif;
-    -webkit-text-stroke: 1.2px black;
+    white-space: nowrap;
+    color:white;
+    letter-spacing:0;
+    vertical-align: bottom;
+    line-height: 143%;
+}
+h2 { 
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }

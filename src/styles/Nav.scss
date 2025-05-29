@@ -1,29 +1,22 @@
-.logo { 
+.navigation {
+    width: 1284px;
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+nav .logo { 
    width:208px;
    height: 68px;
    margin-left: 45px;
-   display: flex;
    padding: 0;
-} 
-
-nav { 
-      display: flex;
-      width: 1290px;
-      align-items: center;
-      margin-bottom: 45px;
-} 
+}  
 nav a {
     font-size: 24px;
     text-decoration: none;
     color: inherit;
+    margin-left: 30px;
 }
-.navigation {
-    margin: 0 10px 0 auto;
-    gap: 57px;
-    display: flex;
-} 
-
-
 nav a.active, nav a[aria-current="page"] {
   border-bottom: 2px solid #000;
   color: #000;

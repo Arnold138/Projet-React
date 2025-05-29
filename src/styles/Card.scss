@@ -15,7 +15,7 @@
 }
 
 .card img {
-    display: none;
+
     width:340px;
     height: 340px;
     background: #FF6060;
@@ -23,11 +23,11 @@
 }
 
 .card-title-overlay { 
-    position:absolute;
-    bottom: 30px;
-    left: 15px;
-    color: white;
-    font-size: 16px;
+    position: absolute;
+    bottom: 0px;
+    left: 12px;
+    color: mintcream;
+    font-size: 17px;
     font-weight: 700;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
 }

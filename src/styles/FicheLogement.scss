@@ -9,12 +9,16 @@ nav {
     width: 1240px;
     margin: 10px auto 25px;
 } 
+.navigation { 
+    margin-bottom: 0;
+}
 .logo { 
     margin-left: 0;
 }
 .fichelogement-header { 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .fichelogement-host img,span {
     width: 65px;
@@ -23,6 +27,13 @@ nav {
     border-radius: 50px;
     color:#FF6060;
     align-items: center;
+}
+.host-name { 
+    word-break: break-all;
+    white-space: normal;
+}
+.fichelogement-title h1 { 
+    padding-bottom: 0;
 }
 .fichelogement-header h1 { 
     color:#FF6060;
@@ -34,10 +45,13 @@ nav {
     margin-top:0px;
     font-size: 18px;
     font-weight: 500;
+    margin-bottom: 0;
 } 
 .fichelogement-tags-rating{ 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 .fichelogement-tags {
    display: flex;
@@ -82,6 +96,7 @@ nav {
 }
  
 img.fichelogement-cover { 
+    display: none;
     width:1240px;
     height: 415px;
 } 
@@ -115,6 +130,7 @@ img.collapse-icon {
     margin: 15px 15px 0px auto;
     width: 24px;
     height: 13px;
+    cursor: pointer;
 }
 
 .collapse-icon {
@@ -128,4 +144,51 @@ img.collapse-icon {
 .collapse-content {
   overflow: hidden;
   transition: height 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.fichelogement-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transform: translateY(-50%);
+
+    &.left { left: 46px; }
+    &.right { right: 46px; }
+  }
+  img.fichelogement-coverimg {
+    width:1240px;
+    height: 415px;
+    object-fit: cover;
+
+}
+.carousel-arrow.right, .carousel-arrow.left {
+    right: 43px;
+    height: 66px;
+
+}
+.carousel-count { 
+    display: none;
+} 
+img.fichelogement-coverimg{ 
+    border-radius: 25px;
+    transition: opacity 0.3s ease-in-out;
+    margin-bottom: 25px;
+}
+.fichelogement-carousel img.fichelogement-coverimg {
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+  &.slide-right {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  &.slide-left {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
 }

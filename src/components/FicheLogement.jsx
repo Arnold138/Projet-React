@@ -4,10 +4,22 @@ import Nav from "./nav.jsx";
 import '../styles/FicheLogement.scss';
 import Collapse from "./Collapse.jsx";
 import Footer from "./Footer.jsx";
+import VectorRight from "../assets/images/right.png"
+import VectorLeft from "../assets/images/left.png";
+import { useState } from "react";
 export default function FicheLogement () { 
     const {id} = useParams();
     const logement = logements.find((item)=> item.id === id);
-
+    const [imgIndex, setImgIndex] = useState(0);
+    //Tableau d'images, si pas d'images, on utilise la couverture
+    const images = logement.pictures || [logement.cover];
+    // Fonction pour changer l'image affichée gauche/droite
+    const prevImage = () => { 
+      setImgIndex(idx => (idx -1 + images.length) % images.length);
+    };
+    const nextImage = () => {
+      setImgIndex(idx => (idx +1) % images.length);
+    };
     if (!logement) {
         return <div>Logement non trouvé.</div>;
     }
@@ -23,6 +35,35 @@ export default function FicheLogement () {
                 <img src={logement.cover} alt={logement.title} className="fichelogement-cover" />
 
                 {/* Première ligne : Titre + Host */}
+                <div className="fichelogement-carousel"> 
+                  {images.length > 1 && (
+                    <img 
+                      src={VectorLeft} 
+                      alt="Image précédente" 
+                      className="carousel-arrow left" 
+                      onClick={prevImage}
+                    />
+                  )}
+                  <img 
+                    src={images[imgIndex]}
+                    alt={logement.title}
+                    className="fichelogement-coverimg"
+                    key={imgIndex}
+                    />
+                    {images.length > 1 && (
+                      <img 
+                        src={VectorRight} 
+                        alt="Image suivante" 
+                        className="carousel-arrow right" 
+                        onClick={nextImage}
+                        />
+                    )}
+                  {images.length > 1 && (
+                    <div className="carousel-count">
+                      {imgIndex + 1}/{images.length}
+                    </div>
+                  )}
+                </div>
                 <div className="fichelogement-header">
                   <div className="fichelogement-title">
                     <h1>{logement.title}</h1>

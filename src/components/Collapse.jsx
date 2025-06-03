@@ -1,21 +1,40 @@
-import { useState } from "react";
-import VectorOpen from "../assets/images/Vectorouvert.png";
+import { useRef, useState, useEffect } from "react";
 import VectorClose from "../assets/images/Vectorfermer.png";
 
 export default function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [height, setHeight] = useState("0px");
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      setHeight(`${contentRef.current.scrollHeight}px`);
+    } else {
+      setHeight("0px");
+    }
+  }, [isOpen, children]);
 
   return (
     <div className="collapse">
-      <div className="collapse-header" onClick={() => setIsOpen((open) => !open)}>
+      <div className="collapse-header" onClick={() => setIsOpen(open => !open)}>
         <span>{title}</span>
         <img
-          src={isOpen ? VectorClose : VectorOpen}
+          src={VectorClose}
           alt={isOpen ? "Fermer" : "Ouvrir"}
-          className="collapse-icon"
+          className={`collapse-icon${isOpen ? " rotated" : ""}`}
         />
       </div>
-      {isOpen && <div className="collapse-content">{children}</div>}
+      <div
+        ref={contentRef}
+        className="collapse-contenttxt"
+        style={{
+          height,
+          overflow: "hidden",
+          transition: "height 0.4s cubic-bezier(0.4,0,0.2,1)",
+        }}
+      >
+        {children}
+      </div>
     </div>
   );
 }

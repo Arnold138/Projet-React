@@ -3,7 +3,7 @@ import logements from '../appartements/appartement';
 import Nav from "./nav.jsx";
 import '../styles/FicheLogement.scss';
 import Collapse from "./Collapse.jsx";
-
+import Footer from "./Footer.jsx";
 export default function FicheLogement () { 
     const {id} = useParams();
     const logement = logements.find((item)=> item.id === id);
@@ -70,6 +70,7 @@ export default function FicheLogement () {
                   </div>
                 </div>
             </div>
+               <Footer />
         </div>
     );
 }

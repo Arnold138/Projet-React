@@ -2,7 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .fiche-logement { 
-    margin: 0 auto;
+    margin: 0 auto 30px;
     width: 1240px;
 }
 nav { 
@@ -64,14 +64,23 @@ nav {
     display: flex;
     justify-content: space-between;
     color: white;
-    background-color: #FF6060;
     gap: 10px;
-    margin-bottom: 200px;
+    align-items: flex-start;
 } 
 .fichelogement-details-row span { 
-    color: white;;
+    color: white;
+    padding: 10px 15px 10px 15px;
 }
+.collapse-header { 
+   height: 50px;
+   display: flex;
+   background-color: #FF6060;
+   border-radius: 5px;
+   font-family: "montserrat", sans-serif;
+   font-weight: 700;
 
+}
+ 
 img.fichelogement-cover { 
     width:1240px;
     height: 415px;
@@ -79,9 +88,44 @@ img.fichelogement-cover {
 
 .fichelogement-description { 
     width: 582px;
-    height: 52px;
+    background: #F6F6F673;
+    border-radius: 10px;
+    color: black;
+    padding-bottom: 10px;
+}
+.fichelogement-description p {
+    padding: 10px;
+    line-height: 1.5;
 }
 .fichelogement-equipments {
     width: 582px;
-    height: 52px;
+    background: #F6F6F673;
+    border-radius: 5px;
+    color: black;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+.fichelogement-equipments ul{ 
+    list-style: none;
+    text-decoration: none;
+    padding-left: 15px;
+}
+img.collapse-icon { 
+    margin: 15px 15px 0px auto;
+    width: 24px;
+    height: 13px;
+}
+
+.collapse-icon {
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  transform: rotate(0deg);
+}
+.collapse-icon.rotated {
+  transform: rotate(-180deg);
+}
+
+.collapse-content {
+  overflow: hidden;
+  transition: height 0.4s cubic-bezier(0.4,0,0.2,1);
 }

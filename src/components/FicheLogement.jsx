@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams,NavLink } from "react-router-dom";
 import logements from '../appartements/appartement';
 import Nav from "./nav.jsx";
 import '../styles/FicheLogement.scss';
@@ -21,7 +21,7 @@ export default function FicheLogement () {
       setImgIndex(idx => (idx +1) % images.length);
     };
     if (!logement) {
-        return <div>Logement non trouvé.</div>;
+        return <Navigate to="*"/>;
     }
 
     return (

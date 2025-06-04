@@ -32,3 +32,15 @@
 h2 { 
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 768px) {
+ .banner {
+    width: 335px;
+    height: 110px;
+    margin: 15px auto;
+ }
+    .banner img {
+        width: 335px;
+        height: 110px;
+    }
+}

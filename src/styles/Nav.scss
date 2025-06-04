@@ -21,3 +21,24 @@ nav a.active, nav a[aria-current="page"] {
   border-bottom: 2px solid #000;
   color: #000;
 }
+@media (max-width: 768px) {
+  .nav {
+   width:335px;
+}
+  .navigation {
+    width:335px;
+  }
+  .links{
+    white-space: nowrap;
+    margin-right: 10px;
+    
+  } 
+  nav .logo {
+    width: 145px;
+    height: 46px;
+  }
+  .links a {
+    font-size: 12px;
+  }
+
+}

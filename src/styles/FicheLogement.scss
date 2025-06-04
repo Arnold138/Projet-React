@@ -192,3 +192,14 @@ img.fichelogement-coverimg{
     opacity: 0;
   }
 }
+@media (max-width: 768px) {
+  nav {
+   width:335px;
+}
+  .navigation {
+    width:335px;
+  }
+  .links{
+    white-space: nowrap;
+  } 
+}

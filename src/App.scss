@@ -31,3 +31,10 @@ body {
   width: 1240px;
   margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+  .body-content {
+    width: 335px;
+    
+  }
+}

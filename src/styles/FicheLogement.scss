@@ -202,4 +202,80 @@ img.fichelogement-coverimg{
   .links{
     white-space: nowrap;
   } 
+  .fichelogement-carousel img {
+    width: 335px;
+    height: 255px;
+    object-fit: cover;
+  }
+  .fiche-logement-header {
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+  }
+  .fichelogement-header h1 { 
+    font-size: 18px;
+  }
+  .fichelogement-description {
+    width: 335px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .fichelogement-equipments {
+    width: 335px;
+    margin: 0 auto;
+  }
+  .fichelogement-details-row {
+    width: 335px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .collapse-header { 
+    height: 30px;
+    padding: 0 0 10px;
+  }
+  .fichelogement-details-row span { 
+    font-size:13px ;
+  }
+  img.collapse-icon { 
+    width: 16px;
+    height: 9px;
+  }
+  .fiche-logement { 
+    width: 335px;
+  }
+  .fichelogement-host img, span {
+    width: 32px;
+    height: 32px;
+  }
+  .host-name { 
+    font-size: 12px;
+  }
+  .fichelogement-location p {
+    font-size: 14px;
+  }
+  .fichelogement-rating span { 
+    font-size: 13px;
+  }
+  .fichelogement-tags span { 
+    width: 84px ;
+    height: 18px;
+  }
+  div.collapse { 
+    margin: 0 0 5px;
+  }
+ .fichelogement-description p {
+  font-size: 12px;
+  }
+  .collapse-contenttxt{ 
+    height: 50px;
+  }
+  body { 
+    margin: 0 auto;
+  }
+  div.Footerdisplay { 
+    width: 375px;
+    height: 209px;
+    margin: 55px auto 0 0;
+  }
 }

@@ -181,6 +181,9 @@ img.fichelogement-coverimg{
     transition: opacity 0.3s ease-in-out;
     margin-bottom: 25px;
 }
+.fichelogement-rating-host-row { 
+  display: none;
+}
 .fichelogement-carousel img.fichelogement-coverimg {
   transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
   &.slide-right {
@@ -214,6 +217,7 @@ img.fichelogement-coverimg{
   }
   .fichelogement-header h1 { 
     font-size: 18px;
+    margin-bottom: 10px;
   }
   .fichelogement-description {
     width: 335px;
@@ -250,12 +254,13 @@ img.fichelogement-coverimg{
   }
   .host-name { 
     font-size: 12px;
+    
   }
   .fichelogement-location p {
     font-size: 14px;
   }
   .fichelogement-rating span { 
-    font-size: 13px;
+    font-size: 22px;
   }
   .fichelogement-tags span { 
     width: 84px ;
@@ -277,5 +282,84 @@ img.fichelogement-coverimg{
     width: 375px;
     height: 209px;
     margin: 55px auto 0 0;
+  }
+  span.tag { 
+    width: 86px;
+    height: 18px;
+    padding: 4px 10px 0 10px;
+    font-size: 9px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 5px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .carousel-arrow.right, .carousel-arrow.left {
+    right: 10px;
+    height: 18px;
+  }
+  img.carousel-arrow.right {
+    width: 11px;
+    height: 18px;
+}
+
+img.carousel-arrow.left {
+    left: 15px;
+    width: 11px;
+    height: 18px;
+}
+ .fichelogement-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .fichelogement-tags-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .fichelogement-tags {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .fichelogement-rating {
+    order: 2;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .fichelogement-host {
+    order: 2; /* même ordre que rating pour les mettre ensemble */
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    float: none;
+    position: static;
+  }
+  .fichelogement-rating,
+  .fichelogement-host {
+    align-items: center;
+    margin: 0;
+  }
+
+  .fichelogement-rating-host-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px; /* ajuste l’espace entre étoiles et host */
+  } 
+  .fichelogement-header .fichelogement-host {
+    display: none;
+  }
+  .star-icon {
+    width: 13px;
+    height: 13px;
+    padding: 2px;
+  }
+  html { 
+    width: 375px;
   }
 }

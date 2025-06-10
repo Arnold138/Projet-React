@@ -42,7 +42,7 @@ nav {
     margin-bottom: 1px;
 }
 .fichelogement-location p { 
-    margin-top:0px;
+    margin:5px 0 10px 0;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 0;
@@ -202,9 +202,15 @@ img.fichelogement-coverimg{
   .navigation {
     width:335px;
   }
-  .links{
+  .links a {
     white-space: nowrap;
+    font-size:14px;
+    font-weight: 500;
+  
   } 
+  img.fichelogement-coverimg { 
+    border-radius: 15px;
+  }
   .fichelogement-carousel img {
     width: 335px;
     height: 255px;
@@ -218,6 +224,7 @@ img.fichelogement-coverimg{
   .fichelogement-header h1 { 
     font-size: 18px;
     margin-bottom: 10px;
+    margin: 0;;
   }
   .fichelogement-description {
     width: 335px;
@@ -254,7 +261,10 @@ img.fichelogement-coverimg{
   }
   .host-name { 
     font-size: 12px;
-    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 5px;
   }
   .fichelogement-location p {
     font-size: 14px;
@@ -263,7 +273,7 @@ img.fichelogement-coverimg{
     font-size: 22px;
   }
   .fichelogement-tags span { 
-    width: 84px ;
+    width: 54px;
     height: 18px;
   }
   div.collapse { 
@@ -294,7 +304,7 @@ img.fichelogement-coverimg{
     border-radius: 5px;
     font-family: 'montserrat', sans-serif;
     font-weight: 700;
-  }
+  } 
   .carousel-arrow.right, .carousel-arrow.left {
     right: 10px;
     height: 18px;
@@ -321,7 +331,7 @@ img.carousel-arrow.left {
   .fichelogement-tags {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 100%;
+    width: 80%;
   }
   .fichelogement-rating {
     order: 2;
@@ -357,7 +367,7 @@ img.carousel-arrow.left {
   .star-icon {
     width: 13px;
     height: 13px;
-    padding: 2px;
+    padding: 3px;
   }
   html { 
     width: 375px;

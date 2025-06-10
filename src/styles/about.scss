@@ -48,3 +48,33 @@ div.collapse {
 .about { 
     margin-top: 25px;
 }
+
+@media (max-width: 768px) { 
+ 
+    .fond-image-apropos-container { 
+        width:335px;
+        height: 111px;
+        margin-left: 15px;
+    }
+    .fond-image-apropos { 
+        width: 335px;
+        height: 111px;
+
+    }
+    .collapse-header,.collapse-contenttxt p { 
+        width:335px;
+        height: 30px;
+    }
+    .collapse-contenttxt p { 
+        padding: 0px;
+        margin: 0px;
+        font-size: 14px;
+    }
+    .collapse-header span { 
+        font-size: 13px;
+    }
+        .about-collapse{
+         margin-left: 15px;
+        }
+
+}

@@ -13,8 +13,11 @@ import { useState } from "react";
 export default function FicheLogement () { 
     const {id} = useParams();
     const logement = logements.find((item)=> item.id === id);
+    // Si pas de logement trouvé, on redirige vers la page 404
     const [imgIndex, setImgIndex] = useState(0);
-
+    if (!logement) {
+        return <Navigate to="/404"/>;
+    }
     // Tableau d'images, si pas d'images, on utilise la couverture
     const images = logement.pictures || [logement.cover];
 
@@ -26,9 +29,7 @@ export default function FicheLogement () {
       setImgIndex(idx => (idx +1) % images.length);
     };
 
-    if (!logement) {
-        return <Navigate to="*"/>;
-    }
+    
 
     return (
         <div>

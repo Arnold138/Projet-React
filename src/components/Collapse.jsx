@@ -24,8 +24,7 @@ export default function Collapse({ title, children }) {
           className={`collapse-icon${isOpen ? " rotated" : ""}`}
         />
       </div>
-      <div
-        ref={contentRef}
+      <div ref={contentRef}
         className="collapse-contenttxt"
         style={{
           height,
@@ -39,7 +38,7 @@ export default function Collapse({ title, children }) {
       transform: isOpen ? "translatey(0)" : "translatey(-130px)",
       opacity: isOpen ? 1 : 0,
       transition: "transform 0.6s cubic-bezier(0.4,0,0.2,1), opacity 0.2s",
-      paddingTop:"8px",
+      paddingTop:"0px",
     }}> 
         {children}
         </div>

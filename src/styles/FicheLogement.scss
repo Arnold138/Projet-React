@@ -258,28 +258,40 @@ img.star-icon.star-empty {
     gap: 0;
   }
   .collapse-header { 
-    height: 30px;
-    padding: 0 0 10px;
+    height: 22px;
+    padding: 10px 0 0px;
+    align-items: center;
   }
   .fichelogement-details-row span { 
-    font-size:13px ;
+    font-size:13px;
+    padding: 0 0 0 10px;
   }
   img.collapse-icon { 
     width: 16px;
     height: 9px;
+    margin: 0 10px 10px auto;
   }
   .fiche-logement { 
     width: 335px;
   }
   .fichelogement-host img, span {
     width: 32px;
+    height: 30px;
+  }
+  .fichelogement-host { 
+    margin: 0 0 0 auto;
+  }
+  .fichelogement-ratingmain { 
+    display: none;
   }
   .host-name { 
     font-size: 12px;
     display: flex;
     align-items: center;
-    width: 100%;
-    padding-right: 5px;
+    white-space: normal;
+    padding: 0px;
+    margin-left: auto;
+    width: 40%;
   }
   .fichelogement-location p {
     font-size: 14px;
@@ -293,17 +305,17 @@ img.star-icon.star-empty {
     height: 18px;
   }
   div.collapse { 
-    margin: 0 0 5px;
+    margin: 0 0 30px;
   }
  .fichelogement-description p {
   font-size: 12px;
   }
   .collapse-contenttxt{ 
-    height: 50px;
     padding: 0;
     margin: 0;
     overflow: hidden;
-    
+    font-size: 14px;
+    line-height: 1.5;
   }
   body { 
     margin: 0 auto;
@@ -314,13 +326,12 @@ img.star-icon.star-empty {
     margin: 55px auto 0 0;
   }
   span.tag { 
-    width: 86px;
+    width: 70px;
     height: 14px;
-    padding: 3px 10px 1px 10px;
-    margin: 0 ;
-    font-size: 9px;
+    padding: 3px 8px 1px 8px;
+    margin:0;
+    font-size: 8px;
     text-align: center;
-    align-items: center;
     overflow: hidden;
     white-space: nowrap;
     border-radius: 5px;
@@ -354,7 +365,7 @@ img.carousel-arrow.left {
   .fichelogement-tags {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 80%;
+    width: fit-content;
   }
   .fichelogement-rating {
     order: 2;
@@ -389,10 +400,12 @@ img.carousel-arrow.left {
     display: none;
   }
   .star-icon {
-    width: 13px;
+    width: 12px;
     height: 13px;
-    padding: 3px;
+    padding: 1px;
+    object-fit: contain;
   }
+ 
   html { 
     width: 375px;
   }

@@ -63,7 +63,6 @@ div.collapse {
     }
     .collapse-header,.collapse-contenttxt p { 
         width:335px;
-        height: 30px;
     }
     .collapse-contenttxt p { 
         padding: 0px;
@@ -76,4 +75,8 @@ div.collapse {
         .about-collapse{
          margin-left: 15px;
         }
+    .about-collapse p { 
+        padding: 5px 5px 0 5px;
+    }
+
 }

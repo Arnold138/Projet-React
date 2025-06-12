@@ -69,14 +69,23 @@ div.collapse {
         margin: 0px;
         font-size: 14px;
     }
-    .collapse-header span { 
+    .collapse-header span {
         font-size: 13px;
+        padding: 0 0 0 5px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
     }
-        .about-collapse{
+    div.about-collapse { 
          margin-left: 15px;
-        }
-    .about-collapse p { 
-        padding: 5px 5px 0 5px;
+         width: 335px;
+
+    }
+    div.about-collapse, .collapse-contenttxt { 
+        padding: 5px;
+    }
+    .about-collapse, img.collapse-icon { 
+        margin: 0;
     }
 
 }

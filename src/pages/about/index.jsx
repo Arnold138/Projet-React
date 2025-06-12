@@ -18,6 +18,7 @@ export default function About() {
             <main>
                 <section className="about">
                     <div className="about-collapse">
+                        <div className="title-about">
                         <Collapse title="Fiabilité">
                         <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
                         </Collapse> 
@@ -30,8 +31,8 @@ export default function About() {
 
                         <Collapse title="Sécurité">
                         <p>La sécurité est la priorité de Kasa. Aussi bien pour les hôtes que pour les voyageurs, chaque logement respecte les normes de sécurité en vigueur.</p>
-
-                        </Collapse> 
+                        </Collapse>
+                        </div> 
                     </div>
                 </section>
             </main>

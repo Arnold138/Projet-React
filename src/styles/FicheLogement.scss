@@ -54,7 +54,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5px 0 20px 0;
+    margin: 10px 0 20px 0;
 }
 .fichelogement-tags {
    display: flex;
@@ -108,11 +108,12 @@ img.fichelogement-cover {
     background: #F6F6F673;
     border-radius: 10px;
     color: black;
-    padding-bottom: 10px;
 }
 .fichelogement-description p {
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
     line-height: 1.5;
+    margin: 0;
 }
 .fichelogement-equipments {
     width: 582px;
@@ -330,7 +331,7 @@ img.star-icon.star-empty {
     height: 14px;
     padding: 3px 8px 1px 8px;
     margin:0;
-    font-size: 8px;
+    font-size: 9px;
     text-align: center;
     overflow: hidden;
     white-space: nowrap;

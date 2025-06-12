@@ -6,8 +6,10 @@ export default function Card({ data }) {
 
    <Link to={`/logement/${data.id}`} className="card">
       <img src={data.cover} alt={data.title} className="card-img" />
+      <div className="card-blur">
       <div className="card-title-overlay">
         <h3>{data.title}</h3>
+        </div>
       </div>
     </Link>
   );

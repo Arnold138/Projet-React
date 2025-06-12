@@ -2,9 +2,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 50px;
-    gap:50px;
+    gap: 55px;
     background: #F6F6F6;
-    padding: 45px;
+    padding: 40px;
 }
 .card { 
     position: relative;
@@ -30,6 +30,21 @@
     font-size: 17px;
     font-weight: 700;
     font-family: "Montserrat";
+}
+.card-blur {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  /* Fond translucide flouté : */
+  background: rgba(49, 48, 48, 0.2); 
+  backdrop-filter: blur(1px);      
+  -webkit-backdrop-filter: blur(1px); 
+  z-index: 2;
+  border-radius: 5px;
 }
 @media (max-width: 768px) {
   .cards-list {

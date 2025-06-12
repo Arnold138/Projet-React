@@ -33,12 +33,13 @@ export default function Collapse({ title, children }) {
           transition: "height 0.4s cubic-bezier(0.4,0,0.2,1)",
         }}
       >
-        <div className="collapse-content-inner"
-    style={{
-      transform: isOpen ? "translatey(0)" : "translatey(-104px)",
+        <div ref={contentRef}
+         className="collapse-content-inner"
+      style={{
+      transform: isOpen ? "translatey(0)" : "translatey(-130px)",
       opacity: isOpen ? 1 : 0,
-      transition: "transform 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.2s",
-      padding: 5,
+      transition: "transform 0.6s cubic-bezier(0.4,0,0.2,1), opacity 0.2s",
+      paddingTop:"8px",
     }}> 
         {children}
         </div>

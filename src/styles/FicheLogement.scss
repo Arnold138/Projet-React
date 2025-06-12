@@ -18,19 +18,22 @@ nav {
 .fichelogement-header { 
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .fichelogement-host img,span {
-    width: 65px;
-    height: 65px;
+    width: 62px;
     font-size: 18px;
     border-radius: 50px;
     color:#FF6060;
     align-items: center;
 }
+.fichelogement-host {
+  display: flex;
+  align-items: center;
+}
 .host-name { 
     word-break: break-all;
     white-space: normal;
+    padding-right: 8px;
 }
 .fichelogement-title h1 { 
     padding-bottom: 0;
@@ -51,13 +54,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0 20px 0;
+    margin: 5px 0 20px 0;
 }
 .fichelogement-tags {
    display: flex;
    gap: 10px;
 }
-
 .fichelogement-rating span{ 
     font-size:30px;
     color: #FF6060;
@@ -69,7 +71,7 @@ nav {
     width: fit-content;
     align-items: center;
     height: 22px;
-    padding: 3px 20px 0px 20px;
+    padding: 3px 22px 0px 22px;
     background-color: #FF6060;
     color: white;
 } 
@@ -92,7 +94,7 @@ nav {
    border-radius: 5px;
    font-family: "montserrat", sans-serif;
    font-weight: 700;
-
+   align-items: center;
 }
  
 img.fichelogement-cover { 
@@ -127,7 +129,7 @@ img.fichelogement-cover {
     padding-left: 15px;
 }
 img.collapse-icon { 
-    margin: 15px 15px 0px auto;
+    margin: 1px 15px 0px auto;
     width: 24px;
     height: 13px;
     cursor: pointer;
@@ -183,6 +185,20 @@ img.fichelogement-coverimg{
 }
 .fichelogement-rating-host-row { 
   display: none;
+}
+.fichelogement-ratingmain, .star-icon {
+  display: flex;
+  padding: 3px;
+  margin: 0 0 0 auto;
+}
+
+img.star-icon {
+    object-fit: contain;
+    width: 20px;
+    display: inline-block;
+}
+img.star-icon.star-empty {
+    width: 26px;
 }
 .fichelogement-carousel img.fichelogement-coverimg {
   transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
@@ -257,7 +273,6 @@ img.fichelogement-coverimg{
   }
   .fichelogement-host img, span {
     width: 32px;
-    height: 32px;
   }
   .host-name { 
     font-size: 12px;
@@ -285,6 +300,10 @@ img.fichelogement-coverimg{
   }
   .collapse-contenttxt{ 
     height: 50px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    
   }
   body { 
     margin: 0 auto;

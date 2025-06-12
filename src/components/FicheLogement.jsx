@@ -78,7 +78,10 @@ export default function FicheLogement () {
                     <h1>{logement.title}</h1>
                   </div>
                   <div className="fichelogement-host">
-                    <span className="host-name">{logement.host.name}</span>
+                    <span className="host-name">
+                      {logement.host.name.split(" ")[0]}<br/>
+                      {logement.host.name.split(" ").slice(1).join("")}
+                      </span>
                     <img src={logement.host.picture} alt={logement.host.name} className="host-picture" />
                   </div>
                 </div>
@@ -95,6 +98,16 @@ export default function FicheLogement () {
                         <span className="tag" key={tag}>{tag}</span>
                     ))}
                   </div>
+                  <div className="fichelogement-ratingmain">
+                      {Array.from({ length: 5 }).map((_, i) => (
+                        <img 
+                        key={i}
+                        src={i < Number(logement.rating) ? StarFull : StarEmpty}
+                        alt={ i < Number(logement.rating) ? "Étoile pleine" : "Étoile vide"}
+                        className={`star-icon ${i < Number(logement.rating) ? '' : 'star-empty'}`}
+                        />
+                      ))}
+                    </div>
                   {/* NOUVELLE DIV pour aligner étoiles + host */}
                   <div className="fichelogement-rating-host-row">
                     <div className="fichelogement-rating">

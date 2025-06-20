@@ -86,11 +86,35 @@
          width: 335px;
 
     }
-    div.about-collapse, .collapse-contenttxt { 
+    div.about-collapse, .collapse-contenttxt p { 
         padding: 5px;
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    div.about-collapse, .collapse-contenttxt { 
+        padding: 0;
+        margin: 0 auto;
     }
     .about-collapse, img.collapse-icon { 
         margin: 0;
     }
+    .title-about { 
+        gap: 5px;
+        margin-bottom: 0;
+    }
+    section.about  { 
+        width: 335px;
+        margin-bottom: 0;
+        margin: 0 auto 0 10px
+    }
+    .div.about-collapse { 
+        margin: 0 auto;
+    }
+    div.collapse { 
+        margin-bottom: 20px;
+    }
+        div.Footerdisplay { 
+            margin-top: 0;
+        }
 
 }

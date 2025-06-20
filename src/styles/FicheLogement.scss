@@ -178,8 +178,12 @@ img.collapse-icon {
 
 }
 .carousel-count { 
-    display: none;
-} 
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 52px;
+    color: white;
+}
 img.fichelogement-coverimg{ 
     border-radius: 25px;
     transition: opacity 0.3s ease-in-out;
@@ -287,13 +291,14 @@ img.star-icon.star-empty {
     display: none;
   }
   .host-name { 
-    font-size: 12px;
-    display: block;
-    text-align: center;
-    white-space: normal;
-    padding: 0px;
-    margin-left: auto;
-    width: 100%;
+        font-size: 12px;
+        display: flex;
+        text-align: center;
+        white-space: normal;
+        padding-right: 5px;
+        margin-left: auto;
+        width: 41%;
+        word-break:auto-phrase;
   }
   .fichelogement-location p {
     font-size: 14px;
@@ -334,7 +339,7 @@ img.star-icon.star-empty {
     padding-top: 7px;
   }
   span.tag { 
-    width: 70px;
+    width: auto;
     height: 14px;
     padding: 3px 8px 1px 8px;
     margin:0;
@@ -412,6 +417,9 @@ img.carousel-arrow.left {
     height: 13px;
     padding: 1px;
     object-fit: contain;
+  }
+  .carousel-count { 
+    display: none;
   }
  
   html { 

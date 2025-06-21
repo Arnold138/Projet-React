@@ -1,13 +1,10 @@
 import '../styles/Banner.scss';
 
-export default function Banner () { 
-
-    return( 
-
-        <div className='banner'> 
-        <img src='src/assets/images/backgroundbanner.png' alt='Bannière Kasa'/>
-        <h2>Chez vous, partout et ailleurs</h2>
-        </div>
-    );
-    
+export default function Banner({ image, alt, texte }) {
+  return (
+    <div className="banner">
+      <img src={image} alt={alt} className="banner-img" />
+      {texte && <h2>{texte}</h2>}
+    </div>
+  );
 }

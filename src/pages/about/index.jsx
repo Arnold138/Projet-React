@@ -1,8 +1,9 @@
 import Nav from "../../components/nav"
+import Banner from "../../components/Banner";
+import fondImageApropos from "../../assets/images/fondimageapropos.png";
 import Footer from "../../components/Footer";
 import Collapse from "../../components/Collapse";
 import '../../styles/About.scss';
-import fondImageApropos from "../../assets/images/fondimageapropos.png";
 
 export default function About() { 
     return  (  
@@ -11,9 +12,10 @@ export default function About() {
             <nav>
             <Nav /> 
             </nav> 
-            <div className="fond-image-apropos-container">
-            <img src={fondImageApropos} alt="Fond image à propos" className="fond-image-apropos" />
-            </div>
+             <Banner 
+             image={fondImageApropos}
+             alt="Bannière à propos"
+             />
             </header>
             <main>
                 <section className="about">
